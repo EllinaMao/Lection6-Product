@@ -1,0 +1,21 @@
+﻿@model Lection1.Models.ProductRepository
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<h3>Enter id of item you want to delete</h3>
+<div>
+    <h4>ProductRepository</h4>
+    <hr />
+    <dl class="row">
+    </dl>
+    
+	<form asp-action="Delete" method="post">
+		<input name="id" class="form-control" /><br />
+		<button type="submit" class="btn btn-danger">Удалить</button>
+	</form>
+
+</div>
